@@ -1,0 +1,32 @@
+# ----------------------------------------
+# Git Branch Commands (Create & Rename)
+# ----------------------------------------
+
+# Create a new branch and switch to it
+git checkout -b <branch-name>
+
+# OR create without switching
+git branch <branch-name>
+
+# ----------------------------------------
+# Rename a branch
+# ----------------------------------------
+
+# Rename the current branch
+git branch -m <new-branch-name>
+
+# Rename a specific branch
+git branch -m <old-branch-name> <new-branch-name>
+
+# ----------------------------------------
+# If the branch was already pushed to remote
+# ----------------------------------------
+
+# Delete the old branch from the remote
+git push origin --delete <old-branch-name>
+
+# Push the new branch to remote
+git push origin <new-branch-name>
+
+# Set upstream tracking for the new branch
+git push --set-upstream origin <new-branch-name>
